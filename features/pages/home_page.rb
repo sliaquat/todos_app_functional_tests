@@ -5,13 +5,21 @@ class HomePage
     @url = url
   end
 
-  #Elements
+  #Page Elements
   def login_name_link
     Capybara.find('#login-name-link')
   end
 
   def login_button
     Capybara.find(:id, 'login-buttons-password')
+  end
+
+  def username_field
+    Capybara.find('#login-username')
+  end
+
+  def password_field
+    Capybara.find('#login-password')
   end
 
   def logout_button
@@ -34,8 +42,8 @@ class HomePage
   #Flows
   def sign_in_with(username, password)
     signin_link.click
-    Capybara.fill_in('login-username', :with => username)
-    Capybara.fill_in('login-password', :with => password)
+    username_field.set(username)
+    password_field.set(password)
     login_button.click
   end
 
