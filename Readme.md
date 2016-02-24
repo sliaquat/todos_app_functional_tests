@@ -2,7 +2,7 @@
 
 # Introduction
 
-This is a functional test suite that currently tests that login and logout feature of http://shltodos.meteor.com
+This is a functional test suite that currently only tests the login and logout feature of http://shltodos.meteor.com
 
 #### Setup
 Before running this test suite, please install:
