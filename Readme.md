@@ -12,5 +12,5 @@ Before running this test suite, please install:
 Once you have both of the above installed, go to the install directory and run `bundle install`
 
 ### Run
-Go the install directory and run `cucumber`
+Go to the install directory and run `cucumber`
 
